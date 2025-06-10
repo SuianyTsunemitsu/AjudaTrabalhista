@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ajuda Trabalhista</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f9fa;
+      color: #1f1f1f;
+    }
+
+    header {
+      background-color: #153d6f;
+      padding: 15px 20px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      background-color: #e3effb;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #153d6f;
+    }
+
+    .hero button {
+      padding: 15px 30px;
+      font-size: 16px;
+      background-color: #153d6f;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h3 {
+      color: #153d6f;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .steps div {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .callout {
+      background-color: #fff6e6;
+      padding: 30px;
+      border-left: 6px solid #f1a42c;
+      margin-top: 40px;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #153d6f;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (min-width: 768px) {
+      .steps {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .steps div {
+        flex: 1;
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ajuda Trabalhista</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Como Funciona</a>
+      <a href="#">Advogado Parceiro</a>
+      <a href="#">Fale Conosco</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Trabalhou? Tem direito.<br>A gente te ajuda a buscar justiça — online e com acolhimento.</h2>
+    <button onclick="window.location.href='#'">📄 Começar Agora – Avaliação Gratuita</button>
+  </div>
+
+  <section>
+    <h3>Como Funciona</h3>
+    <div class="steps">
+      <div><strong>1.</strong> Preencha o formulário com sua história.</div>
+      <div><strong>2.</strong> Um advogado analisa seu caso com atenção.</div>
+      <div><strong>3.</strong> Você recebe orientação jurídica e decide se quer entrar com a ação.</div>
+    </div>
+
+    <div class="callout">
+      <h3>Quem pode usar?</h3>
+      <ul>
+        <li>Foi demitido(a) e não recebeu tudo?</li>
+        <li>Trabalhou sem carteira assinada?</li>
+        <li>Era PJ mas cumpria ordens como funcionário?</li>
+        <li>Sofreu assédio, humilhação ou descontos abusivos?</li>
+        <li>Tem dúvidas sobre seus direitos?</li>
+      </ul>
+      <p><strong>Se respondeu sim para qualquer uma, este site é para você.</strong></p>
+      <button onclick="window.location.href='#'">💬 Quero tirar dúvidas primeiro</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Ajuda Trabalhista · contato@ajudatrabalhista.com.br
+  </footer>
+
+</body>
+</html>
