@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ajuda Trabalhista</title>
+
+  <!-- Fonte moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f7f9fa;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
       color: #1f1f1f;
     }
 
     header {
-      background-color: #153d6f;
-      padding: 15px 20px;
-      color: #fff;
+      background-color: #0a1e40;
+      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      color: #fff;
     }
 
     header h1 {
@@ -30,69 +31,65 @@
     }
 
     nav a {
-      margin-left: 20px;
       color: #fff;
+      margin-left: 20px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
     }
 
     .hero {
-      padding: 60px 20px;
-      background-color: #e3effb;
+      padding: 100px 20px 60px;
       text-align: center;
+      background-color: #ffffff;
     }
 
     .hero h2 {
-      font-size: 30px;
+      font-size: 36px;
+      font-weight: 600;
       margin-bottom: 20px;
-      color: #153d6f;
+      color: #0a1e40;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #444;
     }
 
     .hero button {
-      padding: 15px 30px;
-      font-size: 16px;
-      background-color: #153d6f;
+      background-color: #0a1e40;
       color: #fff;
+      font-size: 16px;
+      padding: 14px 28px;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
+      transition: background 0.3s;
     }
 
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section h3 {
-      color: #153d6f;
-      font-size: 24px;
-      margin-bottom: 20px;
+    .hero button:hover {
+      background-color: #123d73;
     }
 
     .steps {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
     }
 
-    .steps div {
+    .step {
       background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .callout {
-      background-color: #fff6e6;
+      border-radius: 10px;
       padding: 30px;
-      border-left: 6px solid #f1a42c;
-      margin-top: 40px;
-      border-radius: 6px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      font-size: 18px;
     }
 
     footer {
-      background-color: #153d6f;
+      background-color: #0a1e40;
       color: #fff;
       text-align: center;
       padding: 20px;
@@ -102,12 +99,9 @@
     @media (min-width: 768px) {
       .steps {
         flex-direction: row;
-        justify-content: space-between;
       }
-
-      .steps div {
+      .step {
         flex: 1;
-        margin: 0 10px;
       }
     }
   </style>
@@ -119,40 +113,26 @@
     <nav>
       <a href="#">Início</a>
       <a href="#">Como Funciona</a>
-      <a href="#">Advogado Parceiro</a>
       <a href="#">Fale Conosco</a>
     </nav>
   </header>
 
   <div class="hero">
-    <h2>Trabalhou? Tem direito.<br>A gente te ajuda a buscar justiça — online e com acolhimento.</h2>
-    <button onclick="window.location.href='#'">📄 Começar Agora – Avaliação Gratuita</button>
+    <h2>Sua Ajuda Trabalhista a um click</h2>
+    <p>Atendimento 100% online, pensado para você que precisa de apoio e resultado.</p>
+    <button onclick="window.location.href='https://forms.gle/exemplo_do_formulario'">
+      Começar avaliação gratuita
+    </button>
   </div>
 
-  <section>
-    <h3>Como Funciona</h3>
-    <div class="steps">
-      <div><strong>1.</strong> Preencha o formulário com sua história.</div>
-      <div><strong>2.</strong> Um advogado analisa seu caso com atenção.</div>
-      <div><strong>3.</strong> Você recebe orientação jurídica e decide se quer entrar com a ação.</div>
-    </div>
-
-    <div class="callout">
-      <h3>Quem pode usar?</h3>
-      <ul>
-        <li>Foi demitido(a) e não recebeu tudo?</li>
-        <li>Trabalhou sem carteira assinada?</li>
-        <li>Era PJ mas cumpria ordens como funcionário?</li>
-        <li>Sofreu assédio, humilhação ou descontos abusivos?</li>
-        <li>Tem dúvidas sobre seus direitos?</li>
-      </ul>
-      <p><strong>Se respondeu sim para qualquer uma, este site é para você.</strong></p>
-      <button onclick="window.location.href='#'">💬 Quero tirar dúvidas primeiro</button>
-    </div>
+  <section class="steps">
+    <div class="step">📋 Você preenche um formulário simples com sua história</div>
+    <div class="step">👩‍⚖️ Um advogado especialista analisa seu caso</div>
+    <div class="step">🧾 Você recebe orientação profissional e decide seguir ou não com a Ação Trabalhista</div>
   </section>
 
   <footer>
-    © 2025 Ajuda Trabalhista · contato@ajudatrabalhista.com.br
+    © 2025 Ajuda Trabalhista · contato@ajudatrabalhista.com.br · Todos os direitos reservados
   </footer>
 
 </body>
